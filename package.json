@@ -10,7 +10,10 @@
   "author": "José Ramón Fernández Leis",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.17.0"
+    "apollo-server": "^2.17.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
