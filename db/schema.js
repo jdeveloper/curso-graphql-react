@@ -41,7 +41,12 @@ const typeDefs = gql`
     }
 
     type Query {
+        # usuarios
         obtenerUsuario(token: String!): Usuario
+
+        # productos
+        obtenerProductos: [Producto]
+        obtenerProducto(id: ID!): Producto
     }
 
     type Mutation {
@@ -50,6 +55,8 @@ const typeDefs = gql`
         autenticarUsuario(input: AutenticarInput) : Token
         # Productos
         nuevoProducto(input: ProductoInput): Producto
+        actualizarProducto(id: ID!, input: ProductoInput): Producto
+        eliminarProducto(id: ID!): String
     }
 `;
 
